@@ -32,4 +32,24 @@
 ## 6-3. Font Awesome
 > icon : Heroicons
 > font : fontawesome
-> `주의 : ` html 과 css를 load 한 다음 script 를 load 할 수 있도록, body 의 가장 마지막에 script 를 추가해주세용 ! 
+> `주의 : ` html 과 css를 load 한 다음 script 를 load 할 수 있도록, body 의 가장 마지막에 script 를 추가해주세용 !  
+
+### 이런 걸 무료로 사용할 수 있다 ! 
+```css
+    <i class="fas fa-wifi"></i>         
+```
+
+## 6-4.
+
+## 6-5. css
+> status bar 의 item 들을 한 줄에 놓고 중간 중간 공간을 띄워보자.
+``` css
+.status-bar{
+    display: flex;
+    justify-content:space-between;
+}
+```
+
+> font !! 
+
+> fa-2x : size !! 
