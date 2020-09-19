@@ -15,7 +15,51 @@
             }
 ```
 
-#### Q1. 왜 결과에 차이가 있는 걸까 ?  
+> 아래 두 code 는 같은 결과를 보여준다. 
+##### code1
+```
+            @media screen and (max-width:600px){
+               div{
+                background-color: black;
+               } 
+            }
+            @media screen and (min-width:601px) and (max-width:1200px){
+               div{
+                background-color: red;
+               } 
+            }
+
+            @media screen and (min-width:1200px) and (max-width:1400px){
+               div{
+                background-color: pink;
+               } 
+            }
+           
+```
+
+##### code2
+```
+
+            @media screen and (max-width:1200px){
+               div{
+                background-color: pink;
+               } 
+            }
+            @media screen and (max-width:800px){
+               div{
+                background-color: red;
+               } 
+            }
+
+            @media screen and (max-width:600px){
+               div{
+                background-color: black;
+               } 
+            }
+```
+
+
+#### Q1. 왜 아래 코드는 안되는걸까ㅓ ? 
 ##### nok
 ```
             @media screen and (max-width:600px){
@@ -35,23 +79,14 @@
             }
  
 ```
-##### ok
-```
 
-            @media screen and (max-width:1200px){
-               div{
-                background-color: pink;
-               } 
-            }
-            @media screen and (max-width:800px){
+> portrait , landscape mode 
+
+``` css
+            @media screen and (min-width:601px) and (max-width:1200px) and (orientation: landscape) {
                div{
                 background-color: red;
                } 
             }
 
-            @media screen and (max-width:600px){
-               div{
-                background-color: black;
-               } 
-            }
 ```
