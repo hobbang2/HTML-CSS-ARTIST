@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+
+body{
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.welcome-header{
+    font-size : 25px;
+    margin : 11vh 0vh;
+    text-align : center;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header__title{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.welcome-header__text{
+    width: 50%;
+    opacity: 0.6;
+}
+
