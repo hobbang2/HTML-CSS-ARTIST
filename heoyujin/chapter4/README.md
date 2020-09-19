@@ -90,3 +90,28 @@
             }
 
 ```
+
+#### b. 4-6.Medea Queries Recap
+> Media Query 는 코드의 condition 을 적는 것  
+> 조건이 참이라면, css 를 실행하시오 !   
+``` css
+@media screen and (min-width:400px){
+    div { 
+        background-color: 42px;
+    }
+}
+```
+##### Media Queries
+> - `element 에 css를 적용시켜야 한다. `  
+> -  `and를 이용하여 연결된다.`  
+> - `min-device-width`, `max-device-width` 같은 속성들도 있다. ( 모바일에서만 적용 ) `
+> - `portrait , landscape`
+> - `reference :` https://developer.mozilla.org/en-US/docs/Web/CSS/@media
+> - `aspect-ratio`,`screen`,`print`... 
+``` css
+@media screen and (min-device-width:400px){
+    div { 
+        background-color: 42px;
+    }
+}
+```
