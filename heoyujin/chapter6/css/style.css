@@ -1,69 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
+/* Components */
+@import "components/status-bar.css";
+/* Screens */
+@import "screens/welcome-header.css";
+@import "screens/login-form.css";
 
+/* font-family , background-color 같이 모든 screen 에 적용되는 속성들 */
 body{
     font-family: 'Nanum Pen Script', cursive;
 }
 
-.welcome-header{
-    font-size : 25px;
-    margin : 11vh 0vh;
-    text-align : center;
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.welcome-header__title{
-    margin-bottom: 20px;
-    font-weight: 600;
-}
 
-.welcome-header__text{
-    width: 50%;
-    opacity: 0.6;
-}
-
-#login-form{
-    display:flex;
-    flex-direction: column;
-    margin:0px 30px;
-}
-
-#login-form input {
-    padding:15px 0px;
-    border:none;
-    font-size:18px;
-    margin-bottom: 25px;
-}
-
-#login-form input:not([type="submit"]){
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    transition:border-color .3s ease-in-out;
-}
-
-#login-form input[type="submit"] {
-    background-color: var(--yellow);
-    cursor: pointer;
-    padding: 20px 0px;
-    border-radius:5px;
-} 
-
-#login-form a{
-    text-align:center;
-    text-decoration: none;
-    color:inherit;
-    font-size : 2.4vw;
-}
-
-<!-- pseudo element-->
-
-#login-form input::placeholder{
-    color: rgba(0,0,0,0.4);
-}
-
-#login-form input:focus{
-    border-color:var(--yellow);
-}
