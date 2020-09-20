@@ -40,6 +40,31 @@
 ```
 
 ## 6-4.
+### a. css hack
+> css 레시피 같은 것들 
+> eg. element 중앙 정렬을 위한 css hack 
+``` css
+.status-bar{
+    display: flex;
+    justify-content:center;
+    padding: 5px 3px;
+}
+
+.status-bar__column{
+    width: 33%;
+}
+
+.status-bar__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child{
+    display:flex;
+    justify-content: flex-end;
+}
+
+```
 
 ## 6-5. css
 > status bar 의 item 들을 한 줄에 놓고 중간 중간 공간을 띄워보자.
@@ -53,3 +78,15 @@
 > font !! 
 
 > fa-2x : size !! 
+
+## 6-7. Log In Form part One
+> eg. border-color transition
+```css
+#login-form input {
+    padding:15px 0px;
+    border:none;
+    font-size:18px;
+    margin-bottom: 25px;
+    transition:border-color .3s ease-in-out;
+}
+```
