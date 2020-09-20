@@ -60,7 +60,7 @@
 }
 
 .status-bar__column:last-child{
-    display:flex;
+    display:flex;   
     justify-content: flex-end;
 }
 
@@ -89,4 +89,28 @@
     margin-bottom: 25px;
     transition:border-color .3s ease-in-out;
 }
+```
+
+> eg. submit 을 제외하고 underline 효과주기 
+### 1. child 이용하기 
+```css
+#login-form input {
+    padding:15px 0px;
+    border:none;
+    font-size:18px;
+    margin-bottom: 25px;
+    transition:border-color .3s ease-in-out;
+}
+
+#login-form :first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#login-form :nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+```
+### 2. attribute selector
+```css
+
 ```
