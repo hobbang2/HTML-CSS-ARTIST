@@ -3,9 +3,11 @@
 @import "variables.css";
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
 /* Screens */
 @import "screens/welcome-header.css";
 @import "screens/login-form.css";
+
 
 /* font-family , background-color 같이 모든 screen 에 적용되는 속성들 */
 body{
